@@ -1,0 +1,191 @@
+﻿<html>
+<head>
+<title>Тур по замкам України</title>
+</head>
+<style>
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 1s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+::-webkit-scrollbar {width: 12px;height: 12px;}
+::-webkit-scrollbar-track-piece {background:linear-gradient(to bottom,#4C72D1 , #262627 50%, #4C72D1);}
+::-webkit-scrollbar-thumb:vertical {height:10px;background:#272c35;}
+::-webkit-scrollbar-thumb:vertical:hover {background:#000;}
+::-webkit-scrollbar-thumb:horizontal {width:10px;background:#272c35;}
+::-webkit-scrollbar-thumb:horizontal:hover {background:#71CA55;}
+body{
+background: linear-gradient(180deg,#010627,#000C40, #4C72D1,#000C40, #010627);
+margin: 10px auto;
+padding: 30px;
+}
+.mainbg1{
+margin: 3% 5% 5% 5%;
+overflow:hidden;
+background:linear-gradient(180deg, #000C40, #4C72D1);
+border: solid 3px #000000;
+margin-bottom:2%;
+}
+.mainbg2{
+margin: 1.98% 5% 5% 5%;
+overflow:hidden;
+background:linear-gradient(180deg, #4C72D1,#000C40);
+border: solid 2px #000000;
+margin-bottom:2%;
+}
+h1{
+color: #4C4C4C;
+padding-bottom: 20px;
+margin-bottom: 20px;
+border-bottom: 2px solid #BEBEBE;
+}
+p{
+font-size:30px;
+color: #ffffff;
+face="Impact, fantasy";
+text-align:center;
+}
+a{
+text-decoration: none;
+}
+</style>
+<body>
+<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+<div class="mainbg1">
+<p style="font-weight: bold; font-size: 60px"> Замки які можно відвідати</p>
+</div>
+<div class="mainbg2">
+<p style="font-size:50"><strong>Кам'янець-Подільський</strong></p>
+<p>Замок був споруджений в 11-12 століттях. Основні укріплення фортеці були добудовані в 16-17 століттях. Фортеця є відмінним зразком надійної фортифікації Східної Європи. Фортеця досі приймає відвідувачів. </p>
+ <p><img src="Photo/159975.jpg"width=800 height=400></p>
+ </div>		
+ <div class="mainbg1">
+ <p style="font-size:50"><strong>Олеський замок</strong></p>
+ <p>Був побудований в 14-17 століттях, на землях Галичини. Точна дата будівництва замку невідома. Вперше про нього згадується в 1837 році. Кажуть, що його побудував син князя Львовича. У 1646 році його зруйнували татари, але в 1682 році його викупив і відбудував колись народжений у ньому князь Речі Посполитої Ян ІІІ Собеський.</p>
+  <p><img src="Photo/159977.webp"width=800 height=400></p>
+ </div>
+ <div class="mainbg2">
+<p style="font-size:50"><strong>Замок Паланок</strong></p>
+<p>Називається також Мукачівський замок. Він був побудований на 68-метровій вулканічній горі. Перша згадка про замок в 11 столітті. Точна дата будівництва не відома. В оборонній системі замку було 14 веж. Його захопили австрійці, і він довгий час був фортецею Австрійської імперії. </p>
+ <p><img src="Photo/159978.webp" width=800 height=400></p>
+ </div>		
+ <div class="mainbg1">
+ <p style="font-size:50"><strong>Підгорецький замок</strong></p>
+ <p>Знаходиться у Львівській області. Він споруджений у стилі епохи Відродження двома відомими архітекторами того часу. Один із замовників замку був гетьман Станіслав Конецпольський, він викупив його у Підгорецьких. Будівництво замку проходило з 1635 року по 1640.</p>
+  <p><img src="Photo/159979.webp"width=800 height=400></p>
+  </div>
+  <div class="mainbg2">
+<p style="font-size:50"><strong>Острозький замок</strong></p>
+<p>Побудований на пагорбі. Раніше там було дерев'яне укріплення, але у 1241 році воно було зруйноване. З 14 по 17 століття він був родовим маєтком Острозьких. У замку є дві вежі. На території замку є Богоявленський собор. </p>
+ <p><img src="Photo/159980.jpg"width=800 height=400></p>
+ </div>
+  <div class="mainbg1">
+ <p style="font-size:50"><strong>Замок Шенборнк</strong></p>
+ <p>Один з наймолодших замків. Розташований в селі Карпати, що в Мукачівському районі Закарпаття. Був заснований в 1890 році як мисливський будиночок, а також як резиденція для графа Шенборна. У ньому 365 вікон, 52 димаря, 12 входів. Всі ці числа відповідають дням у році, тижням в році, і місяцям у році. Замок діючий.</p>
+  <p><img src="Photo/159981.jpg"width=800 height=400></p>
+  </div>
+  <div class="mainbg2">
+<p style="font-size:50"><strong>Золочівський замок</strong></p>
+<p>Знаходиться у Львівській області. Був побудований більше ніж 500 років тому. Це комплекс з двох палаців. Обидва побудовані в стилі ренесанс. У ньому були знайдені два камені з невідомими написами на них. </p>
+ <p><img src="Photo/159982.webp"width=800 height=400></p>
+ </div>
+ <div class="mainbg1">
+ <p style="font-size:50"><strong>Свірзький замок</strong></p>
+ <p>Знаходиться в 40 кілометрах від Львова. Був побудований в 16 столітті, на замовлення магнатів Свірзьких. У фортецю його перетворив наступний власник, граф Центнер, в 17 столітті. Замок знаходиться в старовинному парку. Біля нього є костел 15 століття.</p>
+  <p><img src="Photo/159983.webp"width=800 height=400></p>
+  </div>
+  <div class="mainbg2">
+<p style="font-size:50"><strong>Хотинський замок</strong></p>
+<p>Приймає середньовічні фестивалі, там знімають кіно. Тисячі туристів щорічно відвідують Хотинський замок. Це одне із семи чудес України. Будівництво кам'яних укріплень Хотина прийнято пов'язувати з Галицько-Волинським князівством і з ім'ям Данила Галицького. </p>
+ <p><img src="Photo/159984.webp"width=800 height=400></p>
+ </div>
+ <div class="mainbg1">
+ <p style="font-size:50"><strong>Меджибізький замок</strong></p>
+ <p>Замок-фортеця, розташований в селищі Меджибіж, у верхів'ях річки Південний Буг, при впаданні ріки Бужок, в 30 кілометрах на схід від міста Хмельницького. Найстаріша інформація, що стосується фортеці у Меджибожі, походить з часів існування укріпленого міста Рюрикович, яке виникло над Південним Бугом близько 1146 року. Першим господарем меджибізького міста найімовірніше був Святослав Рюрикович. В 1240 році, під час коли містом володів князь Галицький Данило Романович, Меджибіж захопили і знищили татари. Після того, як литовці у 1362 році відвоювали Поділля у татар, на місці колишніх укріплень було споруджено укріплений замок.</p>
+  <p><img src="Photo/159986.webp" width=800 height=400></p>
+  </div>
+  <div class="mainbg2">
+<p style="font-size:50"><strong>Хотинський замок</strong></p>
+<p>Знаходиться в смт Летичів-це кругла зубчаста вежа, що височить над трасою Вінниця-Хмельницький, є фрагментом Летичівського замку, побудованого в XVI ст. кам'янецьким старостою Яном Потоцьким на вимогу польського короля. Після того, як у 1606 р. Потоцький з протестантизму звернувся в католицизм, замок перейшов у розпорядження ченців-домініканців. Вони почали перебудову замку під монастир. </p>
+ <p><img src="Photo/159987.webp"width=800 height=400></p>
+ </div>
+ <script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+ </body>
+</html>
